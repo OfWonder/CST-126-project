@@ -66,7 +66,7 @@
 		$errorMessage .= "Passwords do not match.<br>";
     }
     
-	$link = mysqli_connect("localhost", "root", "root", "project");
+	$link = mysqli_connect("MYSQLCONNSTR_localdb", "root", "root", "project");
     
     //Check if connection to database is possible
     if (!$link) 
