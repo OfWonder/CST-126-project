@@ -22,7 +22,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
-    echo "connection successful<br/>";
+    echo "connection successful<br/>" . $servername . "<br>" . $dbname . "<br>" . $username . "<br>" . $password;
 }
 $conn->close();
 ?>
