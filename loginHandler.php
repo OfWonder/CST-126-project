@@ -14,7 +14,7 @@
 		 exit;
     }   
 	
-	$link = mysqli_connect("MYSQLCONNSTR_localdb", "root", "root", "project");
+	$link = mysqli_connect("MYSQLCONNSTR_localdb.mysql.database.azure.com", "root", "root", "project");
     
     //Check if connection to database is possible
     if (!$link)
