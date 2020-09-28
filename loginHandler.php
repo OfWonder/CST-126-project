@@ -14,7 +14,7 @@
 		 exit;
     }   
 	
-	$database = "MYSQLCONNSTR_localdb.mysql.database.azure.com";
+	$database = "https://cst-126-project.scm.azurewebsites.net/";
 	$link = mysqli_connect($database, "root", "root", "project");
     
     //Check if connection to database is possible
