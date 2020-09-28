@@ -1,0 +1,43 @@
+<html>
+<style>
+</style>
+
+<head>
+	<title>Regstration Form</title>	
+</head>
+
+<body bgcolor="white">
+
+	<form action="http://localhost/project/registerHandler.php" method="POST">
+		<h1>Register</h1>
+		
+	    <p>Please fill in this form to register. All fields marked with * are required.</p>
+	    
+	    <hr>
+	    
+	    <label for="userNameTextBox"><b>*Username:</b></label><br>
+	    <input type="text" placeholder="Username must be unique." name="userNameTextBox" id="userNameTextBox" required><br>
+	
+	    <label for="emailTextBox"><b>*Email Address:</b></label><br>
+	    <input type="text" placeholder="example@website.com" name="emailTextBox" id="emailTextBox" required><br>
+	    
+	    <label for="nickNameTextBox"><b>Nickname:</b></label><br>
+	    <input type="text" placeholder="This can be anything." name="nickNameTextBox" id="nickNameTextBox"><br>
+	    
+	    <label for="passwordTextBox"><b>*Password:</b></label><br>
+	    <input type="password" placeholder="Enter Password" name="passwordTextBox" id="passwordTextBox" required><br>
+		
+		<label for="confirmPasswordTextBox"><b>*Confirm Password:</b></label><br>
+	    <input type="password" placeholder="Re-enter Password" name="confirmPasswordTextBox" id="confirmPasswordTextBox" required><br>
+	    
+	    <hr>
+	    
+	    <button type="submit" class="registerbtn">Register</button>
+	</form>
+	
+	
+	<form action="http://localhost/Project/getAllUsers.php" method="POST">
+		<button type="submit" class="allusrButton">Get All Users</button>
+	</form>
+</body>
+</html>
