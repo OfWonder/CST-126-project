@@ -67,7 +67,7 @@
     }
     
 	$$database = "127.0.0.1:52057";
-	$link = mysql_connect($database, "azure", "6#vWHD_$", "project");
+	$link = mysqli_connect($database, "azure", "6#vWHD_$", "project");
     
     //Check if connection to database is possible
     if (!$link) 
