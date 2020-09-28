@@ -14,7 +14,8 @@
 		 exit;
     }   
 	
-	$link = mysqli_connect("MYSQLCONNSTR_localdb.mysql.database.azure.com", "root", "root", "project");
+	$database = "MYSQLCONNSTR_localdb.mysql.database.azure.com";
+	$link = mysqli_connect($database, "root", "root", "project");
     
     //Check if connection to database is possible
     if (!$link)
@@ -22,6 +23,8 @@
         echo "Error: Unable to connect to MySQL." . PHP_EOL;
         echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
         echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+		
+		echo $database . "<br>";
         exit;
     }
 	
