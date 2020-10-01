@@ -14,7 +14,7 @@
 		 exit;
     }   
 	
-	$database = "localdb";
+	$database = "localhost:52057";
 	$link = mysqli_connect($database, "azure", "6#vWHD_$", "project");
     
     //Check if connection to database is possible
