@@ -14,7 +14,7 @@
 		 exit;
     }   
 	
-	$database = "127.0.0.1:52057";
+	$database = "localdb";
 	$link = mysqli_connect($database, "azure", "6#vWHD_$", "project");
     
     //Check if connection to database is possible
